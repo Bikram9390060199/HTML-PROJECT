@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Fitness Club</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">HOME</a>
+        </div>
+    <h1 class="head"> Payment Details</h1>
+    <hr>
+    <h3>User Details</h3>
+   
+   <form action="index.php" method="get">
+    <label for="name">
+   <p> USER NAME :<input type="text" name="name" id="name" required placeholder="enter name"></p> 
+</label>
+ <label for="email">
+    <p> EMAIL:<input type="email" name="email" id="email" required placeholder="enter valid email adrress"></p> 
+ </label>
+ 
+   <fieldset>
+    <label for="gender">
+    <legend>GENDER</legend>
+    <p>
+        MALE: <input type="radio" name="gender" id="gender">
+    </label>
+    <label for="female">
+        FEMALE: <input type="radio" name="gender" id="female">
+    </p>
+</label>
+   </fieldset>
+   <p>PINCODE: <input type="number" name="pincode" required placeholder="enter valid pin code" ></p>
+
+<p>ADDRESS :   <textarea name="address" id="" cols="30" rows="10"></textarea></p> 
+
+<hr>
+
+<h3>payment details</h3>
+
+<p>PAYMENT THROUGH  :
+    <select name="card type" id="">
+        <option value="">select a card type</option>
+        <option value="visa">visa</option>
+        <option value="upi">upi</option>
+        <option value="netbanking">netbanking</option>
+    </select>
+</p>
+<p>CARD NUMBER: <input type="number" name="number" id="" required placeholder="enter a valid card number"></p>
+<p>CVV: <input type="number" name="CVV" id="" required max="3" required placeholder="enter your cvv pin"></p>
+<p>EXPIRY DATE: <input type="date" name="date" id=""></p>
+<p>PIN: <input type="password" name="password" id=""  required max="4"></p>
+<br>
+<div class="sub">
+<input type="submit" value="Pay Now" id="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" name="Reset" id="">
+</div>
+
+   </form>
+</div>
+
+</body>
+</html>
